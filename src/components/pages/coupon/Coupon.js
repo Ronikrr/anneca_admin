@@ -30,7 +30,7 @@ const Coupon = () => {
     setSuccess(false); 
 
     try {
-      const response = await axios.post('https://anneca-backend.onrender.com/api/v1/coupon', couponData);
+      const response = await axios.post('https://anneca-backend-sepia.vercel.app/api/v1/coupon', couponData);
       
       console.log('Coupon created successfully:', response.data);
       setSuccess(true); // Set success to true

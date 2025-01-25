@@ -20,7 +20,7 @@ const CouponList = () => {
 
   const fetchCoupons = async () => {
     try {
-      const response = await axios.get(`https://anneca-backend.onrender.com/api/v1/coupon`, {
+      const response = await axios.get(`https://anneca-backend-sepia.vercel.app/api/v1/coupon`, {
         headers: { Authorization: token }
       });
       setCoupons(response.data.data);
@@ -32,7 +32,7 @@ const CouponList = () => {
 
   const deleteCoupon = async (id) => {
     try {
-      await axios.delete(`https://anneca-backend.onrender.com/api/v1/coupon/${id}`, {
+      await axios.delete(`https://anneca-backend-sepia.vercel.app/api/v1/coupon/${id}`, {
         headers: { Authorization: token }
       });
       setCoupons(couponsData.filter((coupon) => coupon._id !== id));
@@ -62,7 +62,7 @@ const CouponList = () => {
   const handleUpdateSubmit = async (e, id) => {
     e.preventDefault();
     try {
-      await axios.put(`https://anneca-backend.onrender.com/api/v1/coupon/${id}`, formData, {
+      await axios.put(`https://anneca-backend-sepia.vercel.app/api/v1/coupon/${id}`, formData, {
         headers: { Authorization: token }
       });
       setEditCoupon(null);
