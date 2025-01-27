@@ -57,13 +57,37 @@ const Sizechart = () => {
   const [productsId, setProductsId] = useState("")
   const [loading, setLoading] = useState(false)
   const [fields, setFields] = useState([
-    { size: "", age: "", chest: "", dressLength: "", waist: "", shortLength: "", frokLength: "", topLength: "", skirtLength: "", blouseLength: "", bottomLength: "" }
+    {
+      // size: "",
+      age: "",
+      chest: "",
+      dressLength: "",
+      waist: "",
+      shortLength: "",
+      frokLength: "",
+      topLength: "",
+      skirtLength: "",
+      blouseLength: "",
+      bottomLength: ""
+    }
   ]);
 
   const addField = () => {
     setFields([
       ...fields,
-      { size: "", age: "", chest: "", dressLength: "", waist: "", shortLength: "", frokLength: "", topLength: "", skirtLength: "", blouseLength: "", bottomLength: "" }
+      {
+        // size: "",
+        age: "",
+        chest: "",
+        dressLength: "",
+        waist: "",
+        shortLength: "",
+        frokLength: "",
+        topLength: "",
+        skirtLength: "",
+        blouseLength: "",
+        bottomLength: ""
+      }
     ]);
   };
 
